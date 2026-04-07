@@ -13,6 +13,12 @@ app.add_middleware(
 
 @app.get("/")
 def root():
+    """
+    Return a simple health-check message for the API root.
+    
+    Returns:
+        dict: JSON object with key "message" set to "DevTrack API is running".
+    """
     return {"message": "DevTrack API is running"}
 
 
